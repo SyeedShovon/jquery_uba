@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('#magic_container').hide().fadeIn(3000, function(){
-        $('p').text('Jquery worked');
-        $('#magic_container').css("background-color","blue");
+        $('p').hide().fadeIn(1000).text('Jquery worked');
+        $('#magic_container').hide().fadeIn(1000).css("background-color","blue");
     });
 });
