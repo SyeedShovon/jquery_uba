@@ -56,14 +56,23 @@
 
 //check hover
 
+// $(document).ready(function(){
+//     let headingText = $("h2").text();
+//     console.log("Heading Text: ", headingText);
+
+//     let imageUrl = $("#sampleImage").attr('src');
+//     console.log("Image URL: ", imageUrl);
+
+//     $("h2").prepend("<em>Updated <em>");
+//     $("h5").html("<em>HTML added<em>");
+
+// })
+
+
 $(document).ready(function(){
-    let headingText = $("h2").text();
-    console.log("Heading Text: ", headingText);
-
-    let imageUrl = $("#sampleImage").attr('src');
-    console.log("Image URL: ", imageUrl);
-
-    $("h2").prepend("<em>Updated <em>");
-    $("h5").html("<em>HTML added<em>");
-
-})
+    var newItemArray = ['Item A','Item B','Item C'];
+    $.each(newItemArray, function(index,value){
+        console.log("Index-"+index+" Val-"+value);
+        $("#itemList").append("<li>"+value+"</>")
+    });
+});
