@@ -75,4 +75,21 @@ $(document).ready(function(){
         console.log("Index-"+index+" Val-"+value);
         $("#itemList").append("<li>"+value+"</>")
     });
+
+    $("#itemList li:last-child").remove();
+    $("#itemList li:contains(Item 1)").remove();
+
+    $('#cssChanger').css({
+        'background-color': 'blue',
+        'font-style': 'bold'
+    });
+
+    var boxWidth = $('#cssChanger').width();
+    var boxHeight = $('#cssChanger').height();
+    var innerBoxWidth = $('#cssChanger').innerWidth();
+    var innerBoxHeight = $('#cssChanger').innerHeight();
+    console.log(boxWidth);
+    console.log(boxHeight);
+    console.log(innerBoxWidth);
+    console.log(innerBoxHeight);
 });
